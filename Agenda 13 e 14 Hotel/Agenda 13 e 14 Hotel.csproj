@@ -57,9 +57,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Agenda_13_e_14_Hotel\**" />
+	  <Compile Remove="Agenda_13_e_14_Hotel\**" />
+	  <EmbeddedResource Remove="Agenda_13_e_14_Hotel\**" />
+	  <MauiCss Remove="Agenda_13_e_14_Hotel\**" />
+	  <MauiXaml Remove="Agenda_13_e_14_Hotel\**" />
+	  <None Remove="Agenda_13_e_14_Hotel\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Informacoes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

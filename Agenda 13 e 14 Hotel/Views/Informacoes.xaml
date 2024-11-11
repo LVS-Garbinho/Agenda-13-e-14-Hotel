@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda_13_e_14_Hotel.Views.Informacoes"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Azul}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Informações"
+       TextColor="{StaticResource Primary}"
+       FontSize="50"
+       HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Feito por Lucas Valderrama Siqueira 2024" />
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+               
+        </Frame>
+
+        <Button Text="Voltar"
+        HorizontalOptions="Center"
+        Clicked="Button_Clicked" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
